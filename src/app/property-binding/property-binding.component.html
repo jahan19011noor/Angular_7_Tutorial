@@ -1,0 +1,18 @@
+<h2>Property Binding</h2>
+
+<p>Limitation of interpolation: </p>
+
+<p>It works only with stirngs</p>
+
+
+<p>Does not work for boolean values</p>
+
+<p>proerty binding works in that case</p>
+
+<p><input disabled="false" type="text" value="Assigning true to disabled attributed does not work"></p>
+
+<p><input [disabled]="true" type="text" value="Assigning true to [disabled] works"></p>
+
+<p><input bind-disabled="true" type="text" value="Assigning true to bind-disabled works"></p>
+
+<p><input [disabled]="isDisabled" type="text" value="We can also use variables to bind to proerties"></p>

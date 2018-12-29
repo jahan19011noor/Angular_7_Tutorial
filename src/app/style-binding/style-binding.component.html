@@ -1,0 +1,13 @@
+<h2>Style Binding</h2>
+
+<p [style.color]="'orange'">Orange color assigned by [style.color]="'orange'"</p>
+
+<p [style.color]="styleColor">Orange color assigned by [style.color]="styleColor"</p>
+
+<p>Conditional Style Binding</p>
+
+<p [style.color]="hasError ? 'red' : 'orange'">Style binding applied by conditional expression [style.color]="hasError ? 'red' : 'orange'"</p>
+
+<p [style.color]="!hasError ? 'red' : 'orange'">Style binding applied by conditional expression [style.color]="!hasError ? 'red' : 'orange'"</p>
+
+<p [ngStyle]="styleCollection">Style binding with ngStyle property binding as [ngStyle]="styleCollection"</p>

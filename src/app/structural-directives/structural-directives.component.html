@@ -1,0 +1,41 @@
+<h2>Structural Directives in Angular</h2>
+
+<h2>The *ngIf directive</h2>
+
+<p *ngIf="false">*ngIf="true"</p>
+
+<p *ngIf="showElement; else elseBlock">Show Element</p>
+
+<p>The ng-template tag contains html that a *ngIf may use as its else block</p>
+<p>the ng-template block is called and displayed by its reference variable</p>
+<ng-template #elseBlock>
+	<h2>Element is Hidden</h2>
+</ng-template>
+
+<h2>Making full use of the ng-template</h2>
+
+<div *ngIf="displayThenBlock; then thenBlock; else elseThenBlock"></div>
+
+<ng-template #thenBlock>
+	<h6>This is the thenBlock</h6>
+</ng-template>
+
+<ng-template #elseThenBlock>
+	<h6>This is the elseBlock</h6>
+</ng-template>
+
+<h2>The *ngSwitch directive</h2>
+
+<div [ngSwitch]="pickedColor">
+	<div *ngSwitchCase="'red'">Red Color has been selected</div>
+	<div *ngSwitchCase="'green'">Green Color has been selected</div>
+	<div *ngSwitchCase="'blue'">Blue Color has been selected</div>
+	<!-- <div *ngSwitchWhen="'pink'">No Color Selected</div> -->
+	<div *ngSwitchDefault>Please Select another color</div>
+</div>
+
+<h2>The *ngFor directive</h2>
+
+<div *ngFor="let color of colors; index as i; first as f; last as l; odd as o; even as e">
+	<h4>{{i}}: {{color}} is first: {{f}} and is last: {{l}} and is odd: {{o}} and is even: {{e}}</h4>
+</div>

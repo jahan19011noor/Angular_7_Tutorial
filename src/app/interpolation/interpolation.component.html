@@ -1,0 +1,27 @@
+<h2>Variable Interpolation</h2>
+
+<p>{{'Welcome'+name+"!"}}</p>
+
+<h2>Expression Interpolation</h2>
+
+<p>{{'2+2 = '}}{{2+2}}</p>
+
+<h2>Attribute Interpolation</h2>
+
+<p>{{name.length}}</p>
+
+<h2>Method Interpolation</h2>
+
+<p>{{greetUser()}}</p>
+
+<h2>Assignments within curly braces are not possible</h2>
+
+<p>a = 2+2 in bindings is not possible</p>
+
+<!-- <p>{{a = 2+2}}</p> -->
+
+<h2>Global variable access is not allowed</h2>
+
+<p>Template is not aware of global javascript variables</p>
+
+<p>{{siteUrl}} returned from class variable</p>

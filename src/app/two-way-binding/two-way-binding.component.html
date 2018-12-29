@@ -1,0 +1,18 @@
+<h2>Two Way Binding</h2>
+
+<h2>the ngModel directive uses</h2>
+<ul>
+	<li>
+		first a parenthesis: <strong>Which refers to the data flow from template to class</strong>
+	</li>
+	<li>
+		second a square bracket <strong>whcih refers to the data flow form the class to the template</strong>
+	</li>
+</ul>
+
+<h2>Example</h2>
+
+<label for="name">Name</label>
+<input id="name" [(ngModel)]=name type="text">
+
+<p>Name: {{name}}</p>

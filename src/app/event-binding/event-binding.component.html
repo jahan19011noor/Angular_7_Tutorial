@@ -1,0 +1,15 @@
+<h2>Event Binding</h2>
+
+<button (click)="onClick()">Greet User</button>
+
+<p>{{greeting}}</p>
+
+<p><button (click)="getClickInfo($event)">Get information about the event</button></p>
+
+<p>Here is some information about the event: {{eventInfo}}</p>
+
+<h2>Template statements may also be used instead of funciton handlers</h2>
+
+<p><button (click)="templateStatement='Here is a template statement'">Clicke to initiate a template statement</button></p>
+
+<p>{{templateStatement}}</p>

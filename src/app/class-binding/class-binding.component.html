@@ -1,0 +1,32 @@
+<h2>Class Binding</h2>
+
+<p>adding the css class to the class attribute in html</p>
+
+<p class="text-success">Text Success</p>
+
+<p>adding the class's variable through class binding</p>
+
+<p [class]="successClass">Text Success</p>
+
+<p>class attribute assignment and class property binding does not work together</p>
+
+<p class="text-success" [class]="specialClass">Adding text-success to class attributed does not work when class binding is done with [class]</p>
+
+<h2>Applying single class based on a condition</h2>
+
+<p [class.text-danger]="isDanger">Assigning variable or expression which returns boolean to [class.class_name] adds the necessary class based on the condition</p>
+
+<h2>Applying multiple classes based on condition</h2>
+
+<p>in that case <strong>ngClass</strong> attribute is used</p>
+
+<p>we need</p>
+<ul>
+	<li>the variables</li>
+	<li>an object which will hold true or false on the classes to apply based on the variables</li>
+</ul>
+
+<p [ngClass]="classesToApply">classToApply has been used binding to [ngClass]</p>
+
+<h2>Conclusion</h2>
+<p>Class binding allowes to bing classes on condition or remove classes on condition</p>
