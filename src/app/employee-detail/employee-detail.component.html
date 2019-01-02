@@ -1,0 +1,19 @@
+<p><a (click)="goPrevious()"><button>Previous</button></a>
+<a (click)="goNext()"><button>Next</button></a></p>
+<p><a (click)="gotoEmployees()"><button>Back</button></a></p>
+
+<h2>Employees Detail Component</h2>
+
+<h3>You selected id: {{ employeeId }}</h3>
+<h3>{{ errorMsg }}</h3>
+
+<ul *ngFor="let employee of employees; index as i">
+	<li *ngIf="employee.id === employeeId">{{i}}: Name - {{ employee.name }}; Age - {{ employee.age }}</li>
+</ul>
+
+<p>
+	<a (click)="showOverview()"><button>Overview</button></a>
+	<a (click)="showContact()"><button>Contact</button></a>
+</p>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,5 @@
+<h2>Employees Component</h2>
+<h3>{{ errorMsg }}</h3>
+<ul (click)="onSelect(employee)" [class.selected]="isSelected(employee)" *ngFor="let employee of employees; index as i">
+	<li><button>{{ employee.name }}</button></li>
+</ul>

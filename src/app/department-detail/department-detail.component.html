@@ -1,0 +1,22 @@
+<p><a (click)="gotoDepartments()"><button>Back</button></a></p>
+<p>
+	<a (click)="goPrevious()"><button>Previous</button></a>
+	<a (click)="goNext()"><button>Next</button></a>
+</p>
+
+
+<h2>Department Detail</h2>
+
+<h3>You selected id: {{ departmentId }}</h3>
+
+<h3>{{ errorMsg }}</h3>
+<ul *ngFor="let department of departments">
+  <li *ngIf="department.id === departmentId">{{ department.id }}: {{ department.name }}</li>
+</ul>
+
+<p>
+	<a (click)="showOverview()"><button>Overview</button></a>
+	<a (click)="showContact()"><button>Contact</button></a>
+</p>
+
+<router-outlet></router-outlet>

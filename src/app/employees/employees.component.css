@@ -1,0 +1,10 @@
+li > button {
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.selected > li > button{
+  background-color: blue;
+  color: white;
+}
